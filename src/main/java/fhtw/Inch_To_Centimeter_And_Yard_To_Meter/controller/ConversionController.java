@@ -69,4 +69,18 @@ public class ConversionController {
 
     }
 
+    @GetMapping("/getInchToCentimeters")
+    Float getInchToCentimeters() {
+
+        return conversionService.getInchToCentimeters();
+
+    }
+
+    @GetMapping("/getYardToMeters")
+    Float getYardToMeters() {
+
+        return conversionService.getYardToMeters();
+
+    }
+
 }

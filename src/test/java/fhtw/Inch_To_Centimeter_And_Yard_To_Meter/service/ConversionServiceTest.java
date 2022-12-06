@@ -39,4 +39,21 @@ public class ConversionServiceTest {
 
     }
 
+    @Test
+    void testConversion() {
+
+
+        //Given
+        Float Yards = 69F;
+
+        //When
+        this.conversionService.setYards(Yards);
+        //this.conversionService.getYardToMeters();
+        //No number has yet been set.
+
+        //Then
+        assertEquals(Yards / 1.094F, conversionService.getYardToMeters());
+
+    }
+
 }

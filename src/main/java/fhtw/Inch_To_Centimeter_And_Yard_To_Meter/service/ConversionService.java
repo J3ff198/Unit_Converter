@@ -2,7 +2,6 @@ package fhtw.Inch_To_Centimeter_And_Yard_To_Meter.service;
 
 import fhtw.Inch_To_Centimeter_And_Yard_To_Meter.dto.Conversions;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 @Service
 public class ConversionService {
@@ -35,6 +34,19 @@ public class ConversionService {
 
     public Float getYards(){
         return this.conversions.getYards();
+    }
+
+
+    public Float getInchToCentimeters() {
+
+        return conversions.getInchToCentimeters();
+
+    }
+
+    public Float getYardToMeters() {
+
+        return conversions.getYardToMeters();
+
     }
 
 

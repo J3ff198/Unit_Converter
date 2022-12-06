@@ -36,4 +36,24 @@ public class Conversions {
         return this.yards;
     }
 
+    public float getInchToCentimeters() {
+
+        this.centimeters = this.inches * 2.54F;
+
+        return this.centimeters;
+
+    }
+
+    public float getYardToMeters() {
+
+        if (this.yards != 0){
+
+            this.meters = this.yards / 1.094F;
+
+            return this.meters;
+
+        } else return 0;
+
+    }
+
 }
