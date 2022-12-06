@@ -17,4 +17,32 @@ public class ConversionController {
 
     }
 
+    @GetMapping("/getCentimeters")
+    Float getCentimeters() {
+
+        return conversionService.getCentimeters();
+
+    }
+
+    @GetMapping("/getCentimeters")
+    Float getMeters() {
+
+        return conversionService.getMeters();
+
+    }
+
+    @GetMapping("/getInches")
+    Float getInches() {
+
+        return conversionService.getInches();
+
+    }
+
+    @GetMapping("/getYards")
+    Float getYards() {
+
+        return conversionService.getYards();
+
+    }
+
 }
