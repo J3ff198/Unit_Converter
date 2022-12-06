@@ -17,6 +17,30 @@ public class ConversionController {
 
     }
 
+    //All Posts
+
+    @PostMapping("/setInch/{inches}")
+    Float setInches(@PathVariable Float inches) {
+
+        conversionService.setInches(inches);
+
+        return inches;
+
+    }
+
+    @PostMapping("/setYard/{yards}")
+    Float setYard(@PathVariable Float yards) {
+
+        conversionService.setYards(yards);
+
+        return yards;
+
+    }
+
+
+
+    //All Gets
+
     @GetMapping("/getCentimeters")
     Float getCentimeters() {
 

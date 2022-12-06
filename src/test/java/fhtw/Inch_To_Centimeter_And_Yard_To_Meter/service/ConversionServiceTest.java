@@ -23,4 +23,20 @@ public class ConversionServiceTest {
 
     }
 
+    @Test
+    void testPost() {
+
+
+        //Given
+        Float defaultYards = 69F;
+
+        //When
+        this.conversionService.setYards(defaultYards);
+        //No number has yet been set.
+
+        //Then
+        assertEquals(defaultYards, conversionService.getYards());
+
+    }
+
 }

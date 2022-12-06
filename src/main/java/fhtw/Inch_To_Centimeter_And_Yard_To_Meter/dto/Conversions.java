@@ -7,6 +7,19 @@ public class Conversions {
     private float inches = 0;
     private float yards = 0;
 
+
+    public void setInches(float inches) {
+
+        this.inches = inches;
+
+    }
+
+    public void setYards(float yards) {
+
+        this.yards = yards;
+
+    }
+
     public float getCentimeters(){
         return this.centimeters;
     }
