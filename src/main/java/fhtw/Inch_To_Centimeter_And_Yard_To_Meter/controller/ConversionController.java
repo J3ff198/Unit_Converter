@@ -19,6 +19,9 @@ public class ConversionController {
 
     //All Posts
 
+    /**
+     * @param inches The inches to set for calculation
+     */
     @PostMapping("/setInch/{inches}")
     Float setInches(@PathVariable Float inches) {
 
@@ -28,6 +31,9 @@ public class ConversionController {
 
     }
 
+    /**
+     * @param yards The yards to set for calculation
+     */
     @PostMapping("/setYard/{yards}")
     Float setYard(@PathVariable Float yards) {
 
@@ -69,6 +75,9 @@ public class ConversionController {
 
     }
 
+    /**
+     * It returns the conversion result from Inch to Centimeters
+     */
     @GetMapping("/getInchToCentimeters")
     Float getInchToCentimeters() {
 
